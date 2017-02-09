@@ -19,8 +19,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
+
   <body>
 
+  <!-- Navbar -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <!-- Navigation responsive ! -->
@@ -39,7 +42,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">ACCUEIL</a></li>
             <li><a href="#produits">PRODUITS</a></li>
             <li><a href="#galerie">PRESTATIONS</a></li>
@@ -49,142 +52,154 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+  <!-- Navbar end -->
 
-  
+  <!-- Ouverture section titre -->
+  <section>
+    <div class="container">
+      <div class="row">
 
-  <div class="intro">
-    <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-    <source src="img/header.mp4" type="video/mp4">
-    <source src="Outils-Web.fr.ogv" type="video/ogg">
-    <img src="lourd.png" width="100%" height="100%" > 
-  </video>
-  </div>
+        <!-- Video -->
+        <div class="intro">
+          <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+            <source src="img/header.mp4" type="video/mp4">
+            <source src="Outils-Web.fr.ogv" type="video/ogg">
+            <img src="lourd.png" width="100%" height="100%" >
+          </video>
+        </div>
+        <!-- Video end -->
 
-  <div class="container">
-    <div class="row">
-  <div class="logo">
-    <figure>
-      <img src="img/logo.png">
-    </figure>
-  </div>
+        <!-- Logo -->
+        <div class="logo">
+          <figure>
+            <img src="img/logo.png">
+          </figure>
+        </div>
+        <!-- Logo end -->
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">ENTREPRISE</button>
 
 
-  <div class="buttons">
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">ENTREPRISE</button>
-    <!-- http://www.w3schools.com/bootstrap/bootstrap_ref_js_modal.asp -->
+          <!-- WTF IS IT ?? -->
+          <!--
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
 
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+            <!--btn entreprise
 
-          <!--btn entreprise-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Inscription Lowatt pour un compte entreprise</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Inscrivez-vous pour pouvoir bénéficier des avantages entreprises et de nos conseils personnalisés.</p>
+                  <div class="btn-connection">
 
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Inscription Lowatt pour un compte entreprise</h4>
-            </div>
-            <div class="modal-body">
-              <p>Inscrivez-vous pour pouvoir bénéficier des avantages entreprises et de nos conseils personnalisés.</p>
-              <div class="btn-connection">
-                <btn>
+                  </div>
+                </div>
+
+
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Adresse mail de l'entreprise</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez l'adresse email">
+                  </div>
+                </form>
+
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Nom d'utilisateur</label>
+                    <input class="form-control" type="text" value="" id="example-text-input">
+                  </div>
+                </form>
+
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Choisissez un mot de passe</label>
+                    <input class="form-control" type="password" value="hunter2" id="example-password-input">
+                    <small id="emailHelp" class="form-text text-muted">Ne communiquer votre mot de passe à personne.</small>
+                  </div>
+                </form>
+
+                <div class="modal-footer">
+
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
+          </div>-->
+          <!-- WTF IS IT ??? end -->
 
 
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Adresse mail de l'entreprise</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez l'adresse email">
-              </div>
-            </form>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">PARTICULIER</button>
 
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Nom d'utilisateur</label>
-                <input class="form-control" type="text" value="" id="example-text-input">
-              </div>
-            </form>
+          <!--
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
 
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Choisissez un mot de passe</label>
-                <input class="form-control" type="password" value="hunter2" id="example-password-input">
-                <small id="emailHelp" class="form-text text-muted">Ne communiquer votre mot de passe à personne.</small>
-              </div>
-            </form>
+                <!--btn particulier
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Inscription Lowatt pour un compte de particulier</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Inscrivez-vous pour pouvoir bénéficier des avantages et de nos conseils personnalisés pour toutes vos idées.</p>
+                    <div class="btn-connection">
+                      <btn>
+                    </div>
+                  </div>
 
-            <div class="modal-footer">
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Adresse mail</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez une adresse email">
+                    </div>
+                  </form>
 
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Nom d'utilisateur</label>
+                      <input class="form-control" type="text" value="" id="example-text-input">
+                    </div>
+                  </form>
+
+                  <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Choisissez un mot de passe</label>
+                      <input class="form-control" type="password" value="hunter2" id="example-password-input">
+                      <small id="emailHelp" class="form-text text-muted">Ne communiquer votre mot de passe à personne.</small>
+                    </div>
+                  </form>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+                -->
         </div>
       </div>
+    </div>
+  </section>
 
 
-
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">PARTICULIER</button>
-      <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-          <!--btn particulier-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Inscription Lowatt pour un compte de particulier</h4>
-            </div>
-            <div class="modal-body">
-              <p>Inscrivez-vous pour pouvoir bénéficier des avantages et de nos conseils personnalisés pour toutes vos idées.</p>
-              <div class="btn-connection">
-                <btn>
-              </div>
-            </div>
-
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Adresse mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez une adresse email">
-              </div>
-            </form>
-
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Nom d'utilisateur</label>
-                <input class="form-control" type="text" value="" id="example-text-input">
-              </div>
-            </form>
-
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Choisissez un mot de passe</label>
-                <input class="form-control" type="password" value="hunter2" id="example-password-input">
-                <small id="emailHelp" class="form-text text-muted">Ne communiquer votre mot de passe à personne.</small>
-              </div>
-            </form>
-
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-  </div>
-
-    <div class="qui">
+  <div class="container qui">
     <div class="row">
 
       <h1>Qui sommes-nous</h1>
-       <h3>Collectivités urbaines, municipalités, entreprises, particuliers : nous sommes votre
-spécialiste dans la distribution de luminaires urbains contemporains à basse consommation.</h3>
+      <h3>Collectivités urbaines, municipalités, entreprises, particuliers : nous sommes votre
+          spécialiste dans la distribution de luminaires urbains contemporains à basse consommation.</h3>
 
-    <div class="fou">
-    <div class="row">
-      <div class="col-md-4"><img src="img/philosophie.png" class="img-responsive" alt="Icon Philosophie"></div>
-      <div class="col-md-4"><img src="img/ampoule.png" class="img-responsive" alt="Icon Ampoule"></div>
-      <div class="col-md-4"><img src="img/ville.png" class="img-responsive" alt="Icon Ville"></div>
-    </div>
-  </div>
+      <div class="fou">
+        <div class="row">
+          <div class="col-md-4"><img src="img/philosophie.png" class="img-responsive" alt="Icon Philosophie"></div>
+          <div class="col-md-4"><img src="img/ampoule.png" class="img-responsive" alt="Icon Ampoule"></div>
+          <div class="col-md-4"><img src="img/ville.png" class="img-responsive" alt="Icon Ville"></div>
+        </div>
+      </div>
 
       <div class="col-md-4"><p>Nos produits sont destinés aux espaces publics extérieurs. Nos lampadaires, suspensions, appliques murales, rampes lumineuses, systèmes d’éclairages ponctuels, potelets, bornes, sont sélectionnés en fonction de critères esthétiques répondant aux exigences du design contemporain. L’acier galvanisé, l’aluminium brossé, les fibres de carbone, le verre et le bois sont les matériaux de prédilection de la gamme Lowatt. Résistants, durables, légers, couvrant la gamme des gris de l’anthracite au cristallin et du doré aux coloris neutres, nos supports participent à l’architecture urbaine.</p></div>
 
