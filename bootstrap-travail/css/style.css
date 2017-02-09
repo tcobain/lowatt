@@ -667,28 +667,31 @@ overflow: hidden;
 /*RESPONSIVE MOBILE*/
 
 @media (min-width: 400px){
-
-	h1{
-		font-size: 35px;
+	/*PAGE INDEX*/
+	.logo figure img{
+		margin-right: 0px;
 	}
 
-
-	.homedanse img{
-		width: 300px;
-		padding-bottom: 2px;
+	.container-fluid{
+		margin-left: none;
+		margin-right: none;
 	}
 
-	.container {
-		width: 400px;
+	/*PAGE PRESTATION*/
+	.intro_galerie h3{
+		width: auto;
+		padding-right: 20px;
+		padding-left: 20px;
+		font-size: 18px;
+		padding-bottom: 50px;
 	}
 
-	.rs img{
-		width: 70px;
-		padding-right: 30px;
+	.overlay{
+		display: none;
 	}
 
-	.archive img{
-		padding-bottom: 90px;
+	.hovereffect_pageproduits:hover img{
+		filter: brightness(1);
 	}
 
 }
