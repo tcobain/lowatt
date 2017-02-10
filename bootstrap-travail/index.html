@@ -56,130 +56,126 @@
 
   <!-- Ouverture section titre -->
   <section>
-    <div class="container">
-      <div class="row">
+      <div class="container">
+          <div class="row">
 
-        <!-- Video -->
-        <div class="intro">
-          <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-            <source src="img/header.mp4" type="video/mp4">
-            <source src="Outils-Web.fr.ogv" type="video/ogg">
-            <img src="lourd.png" width="100%" height="100%" >
-          </video>
-        </div>
-        <!-- Video end -->
+              <!-- Video -->
+              <div class="intro">
+                  <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+                      <source src="img/header.mp4" type="video/mp4" />
+                      <source src="Outils-Web.fr.ogv" type="video/ogg" />
+                      <img src="lourd.png" width="100%" height="100%" />
+                  </video>
+              </div>
+              <!-- Video end -->
 
-        <!-- Logo -->
-        <div class="logo">
-          <figure>
-            <img src="img/logo.png">
-          </figure>
-        </div>
-        <!-- Logo end -->
+              <!-- Logo -->
+              <div class="logo">
+                  <figure>
+                      <img src="img/logo.png">
+                  </figure>
+              </div>
+              <!-- Logo end -->
 
-        <!-- Buttons -->
+              <!-- Buttons -->
         <div class="buttons">
           <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">ENTREPRISE</button>
 
-
-
-
-          <div id="myModal" class="modal fade" role="dialog">
+          <!-- Popup -->
+          <div id="entrepriseForm" class="modal fade" role="dialog">
             <div class="modal-dialog">
-
-
-
               <div class="modal-content">
+
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                   <h4 class="modal-title">Inscription Lowatt pour un compte entreprise</h4>
                 </div>
+
                 <div class="modal-body">
                   <p>Inscrivez-vous pour pouvoir bénéficier des avantages entreprises et de nos conseils personnalisés.</p>
-                  <div class="btn-connection">
+                  <!--<div class="btn-connection">
 
-                  </div>
+                  </div>-->
                 </div>
 
-
+                <!-- Form -->
                 <form>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Adresse mail de l'entreprise</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez l'adresse email">
+                    <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Entrez l'adresse email">
                   </div>
-                </form>
 
-                <form>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Nom d'utilisateur</label>
                     <input class="form-control" type="text" value="" id="example-text-input">
                   </div>
-                </form>
 
-                <form>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Choisissez un mot de passe</label>
                     <input class="form-control" type="password" value="hunter2" id="example-password-input">
                     <small id="emailHelp" class="form-text text-muted">Ne communiquer votre mot de passe à personne.</small>
                   </div>
                 </form>
+                <!-- Form end -->
 
                 <div class="modal-footer">
-
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
+
               </div>
             </div>
           </div>
+          <!-- Popup end -->
 
 
 
           <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">PARTICULIER</button>
 
-
+            <!-- Popup -->
             <div id="myModal" class="modal fade" role="dialog">
               <div class="modal-dialog">
-
-
                 <div class="modal-content">
+
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Inscription Lowatt pour un compte de particulier</h4>
                   </div>
-                <div class="modal-body">
-                    <p>Inscrivez-vous pour pouvoir bénéficier des avantages et de nos conseils personnalisés pour toutes vos idées.</p>
-                  <div class="btn-connection">
-                      <btn>
-                  </div>
-                </div>
 
+                  <div class="modal-body">
+                    <p>Inscrivez-vous pour pouvoir bénéficier des avantages et de nos conseils personnalisés pour toutes vos idées.</p>
+                    <!--<div class="btn-connection">
+                      <btn>
+                    </div>-->
+                  </div>
+
+                  <!-- Form -->
                   <form>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Adresse mail</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrez une adresse email">
                     </div>
-                  </form>
 
-                  <form>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Nom d'utilisateur</label>
                       <input class="form-control" type="text" value="" id="example-text-input">
                     </div>
-                  </form>
 
-                  <form>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Choisissez un mot de passe</label>
-                      <input class="form-control" type="password" value="hunter2" id="example-password-input">
+                      <input class="form-control" type="password" value="hunter2"/> <!--id="example-password-input"-->
                       <small id="emailHelp" class="form-text text-muted">Ne communiquer votre mot de passe à personne.</small>
                     </div>
                   </form>
+                  <!-- Form end -->
 
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                   </div>
                   
                 </div>
+              </div>
+            </div>
+            <!-- Popup end -->
 
         </div>
       </div>
